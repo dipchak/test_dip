@@ -1,0 +1,62 @@
+git init
+git remote add origin git://github.com/cmcculloh/repo.git
+git fetch --all
+git pull origin master
+git config --global user.name "Megha Paul"
+git config --global user.email sourav.wgt@gmail.com
+
+
+--------------------------------------------------
+
+
+1) git pull   								//before start working
+2) git add .  								//to add all the file
+3) git add   application/modules/customer/controllers/searchcar.php     // if particular one page to be upload
+4) git commit -m "commit message" 
+5) git push origin master                                      // add branch name
+6) git pull
+
+
+steps for comos upload
+---------------------------
+1)Git status
+2)git pull
+3)git checkout -b change-searchcar-prebook-fixing
+4)git add application/modules/customer/controllers/searchcar.php
+5)git commit -m "commit message"
+6)git pull --rebase origin master
+or
+7)git push origin branch_name
+
+
+
+steps for comos v2 upload
+---------------------------
+1)go to comos_v2_repo
+2)git checkout development
+3)git status
+4)git add .
+5)git status
+6)git commit -m "commit message"
+7)git push origin development
+
+itrix!23
+
+git reset HEAD application/modules/customer/controllers/membership.php
+
+
+git remote -v 
+git remote remove origin 
+git remote add origin https://megha_wgt@bitbucket.org/hazrat_muslimen/comos-car-sharing-portal-official.git 
+
+
+
+rsync(1) -p --chmod=+rwx -e "ssh -i userserver.pem" --copy-unsafe-links -rz 1/ 2/
+
+
+$db['default']['hostname'] = '14.102.146.171';
+$db['default']['username'] = 'comosadmin_drive';
+$db['default']['password'] = 'A0rJRS1W7z';
+$db['default']['hostname'] = 'localhost';
+$db['default']['username'] = 'root';
+$db['default']['password'] = '';
