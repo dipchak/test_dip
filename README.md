@@ -1,2 +1,0 @@
-# HealthStream
-Demo
